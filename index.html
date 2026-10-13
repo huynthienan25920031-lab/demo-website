@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Website demo · Thiên Ân</title>
+<meta name="description" content="Ba website bán hàng demo do Thiên Ân thiết kế: catalog có lọc, giỏ hàng, đặt hàng và mã QR chuyển khoản mẫu. Bấm thử trực tiếp trên điện thoại.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#f7f4ee">
+<style>
+  :root { --bg: #f7f4ee; --ink: #1c1b19; --muted: #5f5b53; --line: #dcd6c9; --accent: #0f6b3c; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+  a { color: inherit; }
+  :focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+  .strip { position: sticky; top: 0; z-index: 5; background: var(--ink); color: var(--bg); font-size: 13px; text-align: center; padding: 7px 12px; }
+  .strip a { font-weight: 700; white-space: nowrap; }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 28px 16px 48px; }
+  h1 { font-size: clamp(30px, 8vw, 46px); line-height: 1.12; margin: 0 0 10px; letter-spacing: -0.5px; }
+  .lead { color: var(--muted); font-size: 17px; max-width: 36em; margin: 0 0 22px; }
+  .list { display: grid; gap: 16px; }
+  .demo { display: grid; grid-template-columns: 104px 1fr; gap: 14px; align-items: center; padding: 14px; border-radius: 18px; text-decoration: none; border: 1.5px solid var(--line); background: #fff; }
+  .thumb { height: 128px; border-radius: 12px; display: flex; align-items: center; justify-content: center; }
+  .thumb svg { width: 74px; height: auto; }
+  .demo small { font-weight: 700; font-size: 12px; letter-spacing: 1.2px; text-transform: uppercase; color: var(--muted); }
+  .demo b { display: block; font-size: 21px; line-height: 1.2; margin: 2px 0 4px; }
+  .demo span { display: block; font-size: 14.5px; color: var(--muted); }
+  .demo i { display: inline-block; margin-top: 8px; font-style: normal; font-weight: 700; color: var(--accent); }
+  h2 { font-size: 20px; margin: 30px 0 10px; }
+  ul { margin: 0; padding-left: 20px; color: var(--muted); }
+  li { margin: 4px 0; }
+  .cta { display: inline-flex; align-items: center; min-height: 50px; margin-top: 18px; padding: 12px 24px; border-radius: 999px; background: var(--accent); color: #fff; font-weight: 700; text-decoration: none; }
+  footer { margin-top: 30px; padding-top: 18px; border-top: 1px solid var(--line); font-size: 13px; color: var(--muted); }
+  @media (min-width: 760px) { .list { grid-template-columns: repeat(3, 1fr); } .demo { grid-template-columns: 1fr; align-items: start; } .thumb { height: 190px; } .thumb svg { width: 110px; } }
+</style>
+</head>
+<body>
+<div class="strip">Đây là website demo do Thiên Ân thiết kế · <a href="https://zalo.me/0908706813" target="_blank" rel="noopener">Zalo 0908 706 813</a></div>
+<main class="wrap">
+  <h1>Ba website bán hàng demo</h1>
+  <p class="lead">Bác bấm vào từng shop để dùng thử như khách: lọc sản phẩm, chọn size và màu, bỏ giỏ, điền form đặt hàng, rồi xem trang đặt hàng thành công có mã QR chuyển khoản mẫu.</p>
+
+  <div class="list">
+    <a class="demo" href="vai-nang-chieu/">
+      <div class="thumb" style="background:linear-gradient(140deg,#f1dcc4,#d9a877)">
+        <svg viewBox="0 0 200 250" aria-hidden="true"><path d="M72 18 L60 50 L40 62 L52 92 L70 84 L62 232 L138 232 L130 84 L148 92 L160 62 L140 50 L128 18 Q100 40 72 18 Z" fill="#C97B4A"/><path d="M72 18 Q100 40 128 18 L122 34 Q100 52 78 34 Z" fill="#8E4E2A"/><rect x="68" y="112" width="64" height="9" rx="4" fill="#8E4E2A"/></svg>
+      </div>
+      <div><small>Thời trang linen, lụa</small><b>Vải Nắng Chiều</b><span>Phong cách ấm, thoáng, chữ có chân kiểu tạp chí.</span><i>Mở demo →</i></div>
+    </a>
+    <a class="demo" href="nen-lam-khe/">
+      <div class="thumb" style="background:radial-gradient(120% 90% at 50% 0%,#3a2c1c,#17141f)">
+        <svg viewBox="0 0 200 250" aria-hidden="true"><path d="M100 22 c-16 28 -12 44 0 56 c12 -12 16 -28 0 -56 Z" fill="#F2A33A"/><rect x="97" y="76" width="6" height="20" rx="3" fill="#2b2118"/><rect x="40" y="96" width="120" height="140" rx="20" fill="#B9A3DA"/><rect x="58" y="146" width="84" height="54" rx="8" fill="#6C4E9A"/></svg>
+      </div>
+      <div><small>Nến thơm thủ công</small><b>Nến Lam Khê</b><span>Phong cách tối, ánh hổ phách, sản phẩm xếp dạng danh sách.</span><i>Mở demo →</i></div>
+    </a>
+    <a class="demo" href="mua-rao-thang-sau/">
+      <div class="thumb" style="background:#bfe6d0;border:2.5px solid #14241a">
+        <svg viewBox="0 0 200 210" aria-hidden="true"><path d="M70 16 L24 44 L8 96 L42 108 L52 84 L52 198 L148 198 L148 84 L158 108 L192 96 L176 44 L130 16 Q100 44 70 16 Z" fill="#F1EDE2" stroke="#14241a" stroke-width="5"/><path d="M100 40 L100 198" stroke="#B9B19C" stroke-width="4"/></svg>
+      </div>
+      <div><small>Sơ mi, áo thun, váy</small><b>Mưa Rào Tháng Sáu</b><span>Phong cách tươi, viền đậm, giá nổi bật từng món.</span><i>Mở demo →</i></div>
+    </a>
+  </div>
+
+  <h2>Mỗi demo đều có</h2>
+  <ul>
+    <li>Trang chủ, catalog lọc theo loại, size và giá</li>
+    <li>Trang sản phẩm chọn size và màu, giỏ hàng, form đặt hàng</li>
+    <li>Trang đặt hàng thành công hiện mã QR chuyển khoản mẫu kèm số tiền và mã đơn</li>
+    <li>Nút "Chat với shop" giả lập</li>
+  </ul>
+  <a class="cta" href="https://zalo.me/0908706813" target="_blank" rel="noopener">Nhắn Zalo 0908 706 813 để làm web cho shop bác</a>
+
+  <footer>
+    <p>Cả ba shop là giả định, không bán hàng thật. Sản phẩm, giá và hình vẽ chỉ để minh họa. Thông tin bác nhập khi dùng thử chỉ lưu tạm trên trình duyệt của bác, không gửi đi đâu. Mã QR là mã mẫu, không quét được.</p>
+  </footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,26 @@
+/* Nến Lam Khê: nền tối, ánh hổ phách, chữ in hoa hẹp. Sản phẩm xếp thành danh sách ngang trên điện thoại. */
+:root {
+  --bg: #17141f; --surface: #221e2d; --ink: #f3ede2; --muted: #b3aabf; --line: #3a3348;
+  --accent: #e2a24c; --on-accent: #1d1608; --radius: 6px;
+  --font-head: "Oswald", "Arial Narrow", Impact, sans-serif; --head-weight: 600; --head-case: uppercase; --head-track: 1px;
+  --strip-bg: #e2a24c; --strip-ink: #1d1608;
+}
+.hero { text-align: center; background: radial-gradient(120% 90% at 50% 0%, #3a2c1c 0%, #17141f 70%); }
+.hero p { margin-left: auto; margin-right: auto; }
+.hero-art { background: transparent; order: -1; }
+.perks div { background: transparent; }
+.grid { grid-template-columns: 1fr; }
+.card { display: grid; grid-template-columns: 116px 1fr; align-items: center; }
+.card .pic { aspect-ratio: auto; height: 100%; padding: 10px; }
+.card .meta { padding: 14px 16px; }
+.card b { font-family: var(--font-head); font-weight: 600; text-transform: uppercase; letter-spacing: 1px; font-size: 18px; }
+.chip { border-radius: var(--radius); }
+.swatch { border-color: var(--bg); }
+.field input, .field select { color: var(--ink); }
+.chat-fab { background: var(--accent); color: var(--on-accent); }
+@media (min-width: 760px) {
+  .hero { text-align: left; }
+  .hero p { margin-left: 0; }
+  .hero-art { order: 0; }
+  .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}

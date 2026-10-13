@@ -1,0 +1,29 @@
+/* Mưa Rào Tháng Sáu: tươi, đậm, viền đen dày và bóng đổ cứng, chữ tròn. */
+:root {
+  --bg: #eef6f1; --surface: #fff; --ink: #14241a; --muted: #46584c; --line: #14241a;
+  --accent: #ffd23f; --accent-text: #0f6b3c; --on-accent: #14241a; --radius: 14px;
+  --font-head: "Baloo 2", "Trebuchet MS", system-ui, sans-serif; --head-weight: 800;
+  --strip-bg: #14241a; --strip-ink: #ffd23f;
+}
+.top { border-bottom: 2.5px solid var(--ink); }
+.hero { margin: 16px; border: 2.5px solid var(--ink); border-radius: 20px; background: #bfe6d0; box-shadow: 6px 6px 0 var(--ink); }
+.hero small { color: var(--ink); }
+.hero p { color: var(--ink); }
+.hero-art { background: #fff; border: 2.5px solid var(--ink); }
+.btn { border: 2.5px solid var(--ink); box-shadow: 4px 4px 0 var(--ink); }
+.btn.ghost { background: #fff; color: var(--ink); }
+.perks { margin-top: 22px; }
+.perks div, .card, .chip, .field input, .qty button { border: 2.5px solid var(--ink); }
+.card { box-shadow: 4px 4px 0 var(--ink); }
+.card .pic { border-bottom: 2.5px solid var(--ink); }
+.card i { color: var(--ink); background: var(--accent); justify-self: start; padding: 0 8px; border-radius: 6px; }
+.chip.on { background: var(--accent); color: var(--ink); }
+.product-pic { border: 2.5px solid var(--ink); box-shadow: 6px 6px 0 var(--ink); }
+.price { color: var(--ink); background: var(--accent); display: inline-block; padding: 0 12px; border-radius: 8px; border: 2.5px solid var(--ink); }
+.cart-link b { border: 2px solid var(--ink); }
+.table-wrap, .review, .quote, .loyal, .loyal-teaser, .field select { border: 2.5px solid var(--ink); }
+.review { box-shadow: 4px 4px 0 var(--ink); }
+.swatch { box-shadow: 0 0 0 2.5px var(--ink); }
+.swatch.on { box-shadow: 0 0 0 2.5px var(--ink), 0 0 0 6px var(--accent); }
+.chat-fab { background: var(--accent); color: var(--ink); border: 2.5px solid var(--ink); box-shadow: 4px 4px 0 var(--ink); }
+.logo { font-size: clamp(14px, 4.7vw, 22px); }

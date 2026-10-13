@@ -1,0 +1,15 @@
+/* Vải Nắng Chiều: ấm, thoáng, chữ có chân kiểu tạp chí. */
+:root {
+  --bg: #fbf6ee; --surface: #fffdf8; --ink: #3a2a1e; --muted: #6b5b4e; --line: #e6d9c5;
+  --accent: #b4451f; --on-accent: #fff; --radius: 22px;
+  --font-head: "Playfair Display", Georgia, "Times New Roman", serif; --head-weight: 900;
+  --strip-bg: #3a2a1e; --strip-ink: #fbf6ee;
+}
+.hero { background: linear-gradient(140deg, #f1dcc4 0%, #e7c29d 70%, #d9a877 100%); border-radius: 0 0 36px 36px; }
+.hero p { color: #5b4b3e; }
+.hero-art { background: transparent; }
+.perks { margin-top: 18px; }
+.card { border: 0; box-shadow: 0 2px 12px rgba(60, 40, 20, 0.08); }
+.btn { border-radius: var(--pill); }
+.product-pic { border-radius: 32px; }
+@media (min-width: 760px) { .hero { margin: 16px 24px 0; border-radius: 36px; } }
